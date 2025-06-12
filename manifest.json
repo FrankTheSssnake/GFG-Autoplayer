@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "GeeksforGeeks Auto Player",
+  "version": "1.0",
+  "description": "Auto-play videos on GeeksforGeeks courses.",
+  "permissions": ["notifications"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.geeksforgeeks.org/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_icon": "icons/icon.png"
+  },
+  "icons": {
+    "48": "icons/icon.png"
+  }
+}
+
